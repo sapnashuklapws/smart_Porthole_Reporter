@@ -113,7 +113,7 @@ if not st.session_state.app_started:
     with col_logo:
         try:
             # Open and display the requested project branding image assets
-            logo_img = Image.open("logo_smart.jpeg")
+            logo_img = Image.open("logo_smart.png")
             st.image(logo_img, use_container_width=True)
         except FileNotFoundError:
             st.warning("⚠️ 'logo_smart.jpeg' file missing from root directory. Please check GitHub deployment repository.")
